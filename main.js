@@ -1,1 +1,1 @@
-const canvas = document.getElementById(gameca)
+const canvas = document.getElementById('gamecanvas')gg;
