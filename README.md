@@ -16,7 +16,7 @@ Goals:
 -Speed increase based on score increments.
 -Multiple obstacles that alternate periodically
 -Start animation where bunny is running away from wolf.
--Snding animation where wolf catches bunny and screen turns red.
+-Ending animation where wolf catches bunny and screen turns red.
 -Jumping and collision sound effects, music etc.
 -Music toggle on home screen
 
