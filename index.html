@@ -2,23 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Hops Away</title>
-
+    <title>It Never Ends</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="game.css">
+    
 </head>
 <body>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="start" style="display:block;">
-        <a href="#" onclick="startGame()">Start!</a>
+        <h1>Evade The Wolf</h1>
+        <!-- <a href="#" onclick="startGame()">Start!</a> -->
         </div>
         <div id="gameOver" style="display:none;">
             <h1>Game Over!</h1>
             <a href="#" onclick="startGame()">Start!</a>
             </div>
     </div>
-    <h1>Escape The Wolf</h1>
     <div class ="game">
+        <div id="score"></div>
         <div id="clouds"></div>
         <div id="mountains"></div>
         <div id="mountains2"></div>
@@ -26,7 +26,6 @@
         <div id="bush"></div>
         <div id="grass"></div>
         <div id="grass2"></div>
-    </div>
     <script src="main.js"></script>
 </body>
 </html><canvas id="gameCanvas"></canvas><canvas id="gameCanvas"></canvas><canvas id="gameCanvas"></canvas>

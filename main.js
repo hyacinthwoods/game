@@ -1,18 +1,7 @@
-window.onload = function() {
-    console.log('gameloop');
-}
-
-function update() {
-    console.log("updating");
-}
-
-function render() {
-    console.log("rendering"); 
-}
- 
-
 const bunny = document.getElementById("bunny")
 const bush = document.getElementById("bush")
+
+let score = 0;
 
 function jump() {
     if(bunny.classList != "jump") {
@@ -37,10 +26,42 @@ let isAlive = setInterval(function () {
     //* detect collision
 
     if (bushLeft <100 && bushLeft > 10 && bunnyTop >= 320) {
-        alert("Game Over!")
+        alert ("Game Over!Your Score:"+score)
     }
+const scoreElement = document.getElementById("score");
 
+function updateScore() {
+    scoreElement.innerHTML = "Score: " + score;
+}
 }, 10)
+
 document.addEventListener("keydown", function (event) {
     jump();
+    increaseScore();
 })
+
+function increaseScore() {
+    score += 1;
+    updateScore();
+}
+function startGame() {
+    let startDiv = document.getElementById("start");
+    let getCanvas = document.getElementById("game");
+    let gameOver = document.getElementById("gameOver");
+    startDiv.style.display = "none";
+    gameCanvas.style.display = "block";
+    gameOver.style.display = "none";
+    start();
+}
+
+function gameOver() {
+    let  = document.getElementById("start");
+    let getCanvas = document.getElementById("canvas");
+    let gameOver = document.getElementById("gameOver");
+    startDiv.style.display = "none";
+    gameCanvas.style.display = "none";
+    gameOver.style.display = "block";
+    start();
+
+    
+}
