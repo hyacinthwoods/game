@@ -13,6 +13,7 @@ Bugs:
 
 Goals:
 -Score based on distance rather than how many obstacles jumped over.
+-High score function, viewable in homepage.
 -Speed increase based on score increments.
 -Multiple obstacles that alternate periodically
 -Start animation where bunny is running away from wolf.
