@@ -5,12 +5,28 @@
     <title>Bunny Hops Away</title>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <canvas id="gameCanvas"></canvas>
-   
-    <h1>Bunny Hops Away</h1>
-    <p>try to hop away!!</p>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="start" style="display:block;">
+        <a href="#" onclick="startGame()">Start!</a>
+        </div>
+        <div id="gameOver" style="display:none;">
+            <h1>Game Over!</h1>
+            <a href="#" onclick="startGame()">Start!</a>
+            </div>
+    </div>
+    <h1>Escape The Wolf</h1>
+    <div class ="game">
+        <div id="clouds"></div>
+        <div id="mountains"></div>
+        <div id="mountains2"></div>
+        <div id="bunny"></div>
+        <div id="bush"></div>
+        <div id="grass"></div>
+        <div id="grass2"></div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html><canvas id="gameCanvas"></canvas><canvas id="gameCanvas"></canvas><canvas id="gameCanvas"></canvas>
